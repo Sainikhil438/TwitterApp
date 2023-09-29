@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import DisplayPage from './Components/DisplayPage';
+import Signin from './Signin/Signin';
+import Signup1 from './Signup/Signup1';
+import Signup2 from './Signup/Signup2';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <DisplayPage/> */}
+      {/* <Signin/> */}
+      {/* <Signup1/> */}
+      <Signup2/>
     </div>
   );
 }
