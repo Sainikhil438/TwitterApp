@@ -16,11 +16,48 @@ const customTextFieldStyle = {
       '& fieldset': {
         borderColor: 'gray', 
       },
+      '& input': {
+        color: 'white', 
+      },
     },
   };
 
 function Signin({setSignInPage}) {
 
+    const emailRegex = /^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*$/;
+    const passwordRegex = /^.*(?=.{8,})(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).*$/;
+
+    const [signinData, setSigninData] = useState({email:"", password:""});
+    const [errorSignin, setErrorSignin] = useState({
+        emailError:false, emailHelper:"",
+        passwordError:false, passwordHelper:""
+    });
+
+    const takeEmail = (event)=>{
+        setSigninData((prev)=>({...prev,email:event.target.value}));
+    };
+    const takePassword1 = (event)=>{
+        setSigninData((prev)=>({...prev,password:event.target.value}));
+    };
+
+    const submit = async()=>{
+        let emailTest = emailRegex.test(signinData.email);
+        let passwordTest = passwordRegex.test(signinData.password);
+
+        setErrorSignin((prevData)=>({
+            ...prevData,
+            emailError: !emailTest,
+            emailHelper: !emailTest ? "Enter correct Email" : "",
+
+            passwordError: !passwordTest,
+            passwordHelper: !passwordTest ? "Enter correct Password" : ""
+        }))
+        console.log(signinData)
+    }
+
+    const handleSignupButton = ()=>{
+        console.log(signinData);
+    }
     const handleSigninClose = ()=>{
         setSignInPage(false)
     }
@@ -53,12 +90,22 @@ function Signin({setSignInPage}) {
                             <p className="si-container-3-1">--------------or----------------</p>
                         </div>
                         <div className="si-container-4">
-                            <TextField className="si-container-4-1" id="si-container-4-1" label="Phone, email, or username" variant="outlined"
+                            <TextField className="si-container-4-1" id="email" label="Email" variant="outlined"
                             sx={customTextFieldStyle}
+                            onChange={takeEmail}
+                            error={errorSignin.emailError}
+                            helperText={errorSignin.emailHelper}
+                            />
+                            <TextField className="si-container-4-1" id="password" label="Password" variant="outlined"
+                            sx={customTextFieldStyle}
+                            type="password"
+                            onChange={takePassword1}
+                            error={errorSignin.passwordError}
+                            helperText={errorSignin.passwordHelper}
                             />
                         </div>
                         <div className="si-container-5">
-                            <button className="si-button-5-1">
+                            <button className="si-button-5-1" onClick={submit}>
                                 <p className="si-next-button">Next</p>
                             </button>
                             <button className="si-button-5-2">
