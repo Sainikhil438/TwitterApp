@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Signup1.css';
 import CloseIcon from '@mui/icons-material/Close';
 import { TextField } from "@mui/material";
+import { signUp } from "../Services/UserServices";
 
 const textFieldStyle = {
     '& .MuiInputLabel-root': {
@@ -18,7 +19,6 @@ const textFieldStyle = {
 };
 
 function Signup1({ setSignUpPage }) {
-
 
     const nameRegex = /^[a-zA-Z ]{2,45}$/;
     const emailRegex = /^[a-z]{3,}(.[0-9a-z]*)?@([a-z]){2,}.[a-z]+(.in)*$/;
@@ -67,8 +67,15 @@ function Signup1({ setSignUpPage }) {
         } else {
             setErrorData((prevData) => ({ ...prevData, confirmpasswordError: false, confirmpasswordHelper: "" }))
         }
-        console.log(signupData)
+        // console.log(signupData)
+
+        if(nameTest === emailTest === passwordTest === confirmpasswordTest === true) {
+            let response = await signUp(signupData);
+            console.log(response);
+        }
     }
+
+    
 
 
     const handleNextButton = () => {

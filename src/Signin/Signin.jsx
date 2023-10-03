@@ -5,7 +5,10 @@ import TwitterImage1 from '../images/TwitterImage.png';
 import GoogleImage1 from '../images/GoogleImage.png';
 import AppleImage1 from '../images/AppleImage.png';
 import { TextField } from "@mui/material";
+import { signIn } from "../Services/UserServices";
 import DisplayPage from "../Components/DisplayPage";
+import { useNavigate } from "react-router-dom";
+
 
 
 const customTextFieldStyle = {
@@ -33,6 +36,7 @@ function Signin({setSignInPage}) {
         passwordError:false, passwordHelper:""
     });
 
+    const navigate = useNavigate();
     const takeEmail = (event)=>{
         setSigninData((prev)=>({...prev,email:event.target.value}));
     };
@@ -52,7 +56,14 @@ function Signin({setSignInPage}) {
             passwordError: !passwordTest,
             passwordHelper: !passwordTest ? "Enter correct Password" : ""
         }))
-        console.log(signinData)
+        // console.log(signinData)
+
+        if(emailTest === passwordTest === true) {
+            let response = await signIn(signinData);
+            console.log(response);
+            localStorage.setItem("twitter-token", response.data.data);
+            navigate("/dashboard");
+        }
     }
 
     const handleSignupButton = ()=>{
