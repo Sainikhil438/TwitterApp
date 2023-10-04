@@ -1,0 +1,124 @@
+.m-main-container{
+    height: 99vh;
+    width: 39vw; 
+    background-color: black;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 26vw; */
+}
+.m-subcontainer-1{
+    /* background-color: bisque; */
+    height: 9%;
+    width: 100%;
+    display: flex;
+}
+.m-subcontainer-1-1{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.m-para-1{
+    font-size: large;
+    margin-left: 1vw;
+    font-weight: 700;
+    color: white;
+}
+.m-subcontainer-1-2{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m-subcontainer-1-3{
+    height: 100%;
+    width: 10%;
+}
+.m-search-subcontainer{
+    height: 9%;
+    width: 100%;
+}
+.m-para-container{
+    /* background-color: bisque; */
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.m-para-container-1{
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    margin-left: 1vw;
+}
+.m-subcontainer-2{
+    /* background-color: aqua; */
+    height: 76%;
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+.m-subcontainer-2-1{
+    /* background-color: aquamarine; */
+    height: 11%;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid gray; */
+}
+.m-container-1{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m-container-2{
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.m-container-2-1{
+    /* background-color: lightblue; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.m-para-2{
+    color: white;
+    font-size: large;
+    font-weight: 500;
+}
+.m-para-3{
+    color: gray;
+}
+.m-span-1{
+    color: gray;
+}
+.m-container-2-2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: violet; */
+}
+.m-para-4{
+    color: gray;
+}
+.m-subcontainer-2-2{
+    height: 11%;
+    width: 100%;
+    display: flex;
+}
+.m-subcontainer-2-3{
+    height: 11%;
+    width: 100%;
+    display: flex;
+}

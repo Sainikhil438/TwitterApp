@@ -9,6 +9,7 @@ import HomePage2 from './HomePage/HomePage2';
 import HomePage3 from './HomePage/HomePage3';
 import Dashboard from './Dashboard/Dashboard';
 import Router from './Router/Router';
+import Messages from './Messages/Messages';
 
 function App() {
   return (

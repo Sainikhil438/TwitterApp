@@ -1,0 +1,100 @@
+.n-main-container{
+    height: 99vh;
+    width: 39vw; 
+    background-color: black;
+    border: 1px solid gray;
+    /* margin-left: 26vw; */
+}
+.n-sub-container-1{
+    height: 7%;
+    width: 100%;
+    display: flex;
+}
+.n-container-1{
+    /* background-color: aliceblue; */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.n-para-1{
+    font-size: 2.7vh;
+    font-weight: 700;
+    color: white;
+    margin-left: 1vw;
+}
+.n-para-2{
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+}
+.n-para-3{
+    color: gray;
+}
+.n-container-2{
+    /* background-color: bisque; */
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.n-sub-container-2{
+    /* background-color: bisque; */
+    height: 7%;
+    width: 100%;
+    display: flex;
+}
+.n-sub-container-2-1{
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.n-sub-container-3{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.n-list-1{
+    /* background-color: aquamarine; */
+    height: 10%;
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+}
+.n-list-1-1{
+    background-color: black;
+    height: 100%;
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.n-image-1{
+    height: 50%;
+}
+.n-list-1-2{
+    height: 100%;
+    width: 88%;
+    display: flex;
+}
+.n-para-4{
+    text-align: left;
+    color: white;
+    font-size: medium;
+    /* background-color: yellow; */
+}
+.n-para-5{
+    color: gray;
+}
+.n-span-1{
+    color: blue;
+}
+.n-list-2{
+    /* background-color: aqua; */
+    height: 70%;
+    width: 100%;
+}

@@ -1,7 +1,8 @@
-/* .th1-outer-page{
+.th1-outer-page{
+    display: flex;
     height: 100vh;
     width: 100vw;
-} */
+}
 .th1-sub-container{
     background-color: black;
     height: 100vh;
@@ -42,7 +43,7 @@
 }
 .th1-container-2:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 .th1-container-2-1{
@@ -72,7 +73,7 @@
 }
 .th1-container-3:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 .th1-container-3-1{
@@ -102,7 +103,7 @@
 }
 .th1-container-4:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 /* .th1-container-4-1{
@@ -131,7 +132,7 @@
 }
 .th1-container-5:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 /* .th1-container-5-1{
@@ -160,7 +161,7 @@
 }
 .th1-container-6:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 /* .th1-container-6-1{
@@ -189,7 +190,7 @@
 }
 .th1-container-7:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 /* .th1-container-7-1{
@@ -218,7 +219,7 @@
 }
 .th1-container-8:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 /* .th1-container-8-1{
@@ -250,7 +251,7 @@
 }
 .th1-container-9:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 /* .th1-container-9-1{
@@ -279,7 +280,7 @@
 }
 .th1-container-10:hover{
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #181818;
     border-radius: 5em;
 }
 /* .th1-container-10-1{

@@ -4,6 +4,8 @@
     background-color: black;
     display: flex;
     align-items: center;
+    /* position: fixed;
+    right: 0; */
 }
 .th3-sub-container{
     /* background-color: aqua; */
